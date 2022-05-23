@@ -12,18 +12,11 @@ def run_ml():
     scaler_X = joblib.load('data/scaler_X.pkl')
     scaler_y = joblib.load('data/scaler_y.pkl')
 
-    # 성별, 나이, 연봉, 카드빚, 자산 을 입력받도록
-    # 만드세요.
+    # 성별, 나이, 연봉, 카드빚, 자산 을 입력받도록 만드세요.
     gender =st.radio('성별 선택', ['남자', '여자'])
-
-
-
     age = st.number_input('나이 입력', 1, 120,)
-
     salary = st.number_input('연봉 입력', 0)
-
     debt = st.number_input('카드빚 입력', 0)
-
     worth = st.number_input('자산 입력',0)
 
     if gender == '여자' :
