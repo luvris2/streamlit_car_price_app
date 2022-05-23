@@ -18,7 +18,6 @@ def main() :
         app_ml.run_ml()
 
     st.sidebar.image('data/pa22.png')
-    st.sidebar.balloons()
-    st.text('abc')
+
 if __name__ == '__main__' :
     main()

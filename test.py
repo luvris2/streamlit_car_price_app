@@ -2,6 +2,7 @@ from anyio import current_time
 import streamlit as st
 import time
 import numpy as np
+
 progress_bar = st.progress(0)
 status_text = st.empty()
 time_text = st.empty()
@@ -34,3 +35,13 @@ with st.empty():
          st.write(f" {seconds} seconds have passed")
          time.sleep(1)
      st.write(" 5 sec over!")
+
+import threading
+
+def thread_run():
+    for i in range(1, 100) :
+            pass
+    print('Thread running - ', i)
+    threading.Timer(1, thread_run).start() #초, 재귀함수사용
+
+    thread_run()
