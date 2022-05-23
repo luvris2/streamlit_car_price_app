@@ -26,3 +26,11 @@ for i in range(100):
 
 status_text.text('Done!')
 st.balloons()
+#############################
+import time
+
+with st.empty():
+     for seconds in range(5):
+         st.write(f" {seconds} seconds have passed")
+         time.sleep(1)
+     st.write(" 5 sec over!")
