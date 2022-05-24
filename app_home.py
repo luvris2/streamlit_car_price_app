@@ -8,5 +8,3 @@ def run_home() :
     st.text('코드가 수정되었습니다.')
 
     st.text('코드 2차 수정')
-
-    st.text('3차수정')
